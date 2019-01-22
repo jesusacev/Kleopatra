@@ -136,12 +136,11 @@ Obtener par de Claves Pública y Privada
 - Procederemos a crear el par de claves para un cliente de la misma manera en que creamos las claves para la Empresa.
 
 
+- Si se quiere realizar la copia de archivos a través de scp se debe instalar y configurar Cygwin que nos permite realizarlo desde el sistema operativo Windows.
+
+
 Instalación y configuración de Cygwin
 +++++++
-
-
-- Luego debemos proceder a instalar Cygwin para poder realizar una copia scp desde el sistema operativo Windows. Guiarse con este link:
-
 
 Instalación de Cygwin: `enlace`__.
 
