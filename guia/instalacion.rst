@@ -120,7 +120,7 @@ Obtener Clave Pública
 .. image:: ../imagenes/cliente/Selección_072.png
 
 
-.. image:: ../imagenes/cliente/Selección_071.png
+.. image:: ../imagenes/cliente/Selección_073.png
 
 
 
