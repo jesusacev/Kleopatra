@@ -2,7 +2,7 @@ Instalación y configuración de Software Kleopatra.
 =========
 
 
-- Se debe descargar GPG4 para windows.
+- Se debe descargar GPG4win para windows.
 
 
 - Procedemos a realizar la instalación a través del ejecutable, el cual incluirá kleopatra:
@@ -66,13 +66,13 @@ Instalación y configuración de Software Kleopatra.
 .. image:: ../imagenes/configuracion/Selección_074.png
 
 
-- Nos solicitrá la contraseña para la clave privada:
+- Nos solicitará la contraseña para la clave privada:
 
 
 .. image:: ../imagenes/configuracion/Selección_075.png
 
 
-- Seleccionamos la opción de Hacer copia de respaldo de su par de clave y las guardamos a donde mejor nos parezca:
+- Seleccionamos la opción de Hacer copia de respaldo de su par de clave y las guardamos en un sitio seguro:
 
 
 .. image:: ../imagenes/configuracion/Selección_076.png
@@ -108,16 +108,10 @@ Instalación y configuración de Software Kleopatra.
 - Para que alguien nos envíe un archivo cifrado debemos suministrarle nuestra clave pública, nunca nuestra clave privada. La clave privada es la que nos servirá para descifrar los archivos.
 
 
-- En caso de que necesitemos la comunicación bidireccional con un cliente debemos generar un nuevo par de llaves pública y privada y suministrarselas.
+Obtener Clave Pública
++++++++
 
-
-- Prcocederemos a crear el par de claves para un cliente de la misma manera en que creamos las claves para la Empresa.
-
-
-- El respaldo que hicimos de nuestro par de claves del cliente se lo enviarémos al respectivo cliente, para que pueda descifrar los archivos que le enviemos con su clave privada. De igual manera le enviaremos sólo la llave pública de la empresa para que pueda cifrar archivos que nos vaya a enviar.
-
-
-- Para obtener la llave pública primero seleccionamos el de la clave que deseamos. Le damos a la opción Archivo y luego Exportar:
+- Para obtener la llave pública primero seleccionamos las claves de la empresa, le damos a la opción Archivo y luego Exportar:
 
 
 .. image:: ../imagenes/cliente/Selección_071.png
@@ -129,12 +123,33 @@ Instalación y configuración de Software Kleopatra.
 .. image:: ../imagenes/cliente/Selección_071.png
 
 
+
+Obtener par de Claves Pública y Privada
+++++++++
+
+- Simplemente las obtenemos con el respaldo que hicimos de nuestro par de claves durante la creación.
+
+
+- En caso de que necesitemos la comunicación bidireccional con un cliente debemos generar un nuevo par de claves pública y privada y suministrarselas.
+
+
+- Procederemos a crear el par de claves para un cliente de la misma manera en que creamos las claves para la Empresa.
+
+
+Instalación y configuración de Cygwin
++++++++
+
+
 - Luego debemos proceder a instalar Cygwin para poder realizar una copia scp desde el sistema operativo Windows. Guiarse con este link:
 
 
+__ https://github.com/cgomeznt/CYGWIN/blob/master/guia/openssh.rst
 
 
+- Seguidamente, realizamos la configuración de Openssh a través de este link:
 
+
+__ https://github.com/jesusacev/Cygwin/blob/master/guia/configuracion.rst
 
 
 
