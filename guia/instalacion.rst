@@ -152,6 +152,16 @@ Instalación y configuración de Cygwin
 .. _Configuración: https://github.com/jesusacev/Cygwin/blob/master/guia/configuracion.rst
 
 
+.. _Wikipedia: http://www.wikipedia.org/
+.. _Linux kernel archive: http://www.kernel.org/
+
+Enlaces anónimos:
+
+Otra oración con un `enlace anónimo al sitio de Python`__.
+
+__ http://www.python.org/
+
+
 
 
 
