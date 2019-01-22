@@ -143,19 +143,20 @@ Instalación y configuración de Cygwin
 - Luego debemos proceder a instalar Cygwin para poder realizar una copia scp desde el sistema operativo Windows. Guiarse con este link:
 
 
-`https://github.com/cgomeznt/CYGWIN/blob/master/guia/openssh.rst`__
+Instalación de Cygwin `enlace`__.
+
+__ https://github.com/cgomeznt/CYGWIN/blob/master/guia/openssh.rst
 
 
 - Seguidamente, realizamos la configuración de Openssh a través de este link:
 
 
-`https://github.com/jesusacev/Cygwin/blob/master/guia/configuracion.rst`__
+Configuración de Openssh `enlace`__.
+
+__ https://github.com/jesusacev/Cygwin/blob/master/guia/configuracion.rst
 
 
-.. _Wikipedia: http://www.wikipedia.org/
-.. _Linux kernel archive: http://www.kernel.org/
 
-Enlaces anónimos:
 
 Otra oración con un `enlace anónimo al sitio de Python`__.
 
