@@ -145,7 +145,7 @@ Instalación y configuración de Cygwin
 
 Instalación de Cygwin `enlace`__.
 
-__ https://github.com/cgomeznt/CYGWIN/blob/master/guia/openssh.rst
+__ https://github.com/jesusacev/Cygwin/blob/master/guia/instalacion.rst
 
 
 - Seguidamente, realizamos la configuración de Openssh a través de este link:
