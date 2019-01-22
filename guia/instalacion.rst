@@ -130,10 +130,7 @@ Obtener par de Claves Pública y Privada
 - Simplemente las obtenemos con el respaldo que hicimos de nuestro par de claves durante la creación.
 
 
-- En caso de que necesitemos la comunicación bidireccional con un cliente debemos generar un nuevo par de claves pública y privada y suministrarselas.
-
-
-- Procederemos a crear el par de claves para un cliente de la misma manera en que creamos las claves para la Empresa.
+- En caso de que necesitemos la comunicación bidireccional con un cliente debemos generar un nuevo par de claves pública y privada,tal cual como generamos las de la Empresa, y suministrarles el respaldo realizado durante la creación.
 
 
 Si se quiere realizar la copia de archivos a través de scp se debe instalar y configurar Cygwin que nos permite realizarlo desde el sistema operativo Windows.
