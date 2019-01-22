@@ -80,6 +80,7 @@ Instalación y configuración de Software Kleopatra.
 
 .. image:: ../imagenes/configuracion/Selección_078.png
 
+
 - Nos solicitará la contraseña ingresada anteriormente para poder exportar la clave privada:
 
 
@@ -102,6 +103,39 @@ Instalación y configuración de Software Kleopatra.
 
 
 .. image:: ../imagenes/configuracion/Selección_082.png
+
+
+- Para que alguien nos envíe un archivo cifrado debemos suministrarle nuestra clave pública, nunca nuestra clave privada. La clave privada es la que nos servirá para descifrar los archivos.
+
+
+- En caso de que necesitemos la comunicación bidireccional con un cliente debemos generar un nuevo par de llaves pública y privada y suministrarselas.
+
+
+- Prcocederemos a crear el par de claves para un cliente de la misma manera en que creamos las claves para la Empresa.
+
+
+- El respaldo que hicimos de nuestro par de claves del cliente se lo enviarémos al respectivo cliente, para que pueda descifrar los archivos que le enviemos con su clave privada. De igual manera le enviaremos sólo la llave pública de la empresa para que pueda cifrar archivos que nos vaya a enviar.
+
+
+- Para obtener la llave pública primero seleccionamos el de la clave que deseamos. Le damos a la opción Archivo y luego Exportar:
+
+
+.. image:: ../imagenes/cliente/Selección_071.png
+
+
+.. image:: ../imagenes/cliente/Selección_072.png
+
+
+.. image:: ../imagenes/cliente/Selección_071.png
+
+
+- Luego debemos proceder a instalar Cygwin para poder realizar una copia scp desde el sistema operativo Windows. Guiarse con este link:
+
+
+
+
+
+
 
 
 
