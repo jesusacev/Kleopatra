@@ -207,6 +207,9 @@ Instalación y configuración de Cygwin
 +++++++
 
 
+- A continuación mostramos el link para la instalación de Cygwin:
+
+
 Instalación de Cygwin: `enlace`__.
 
 __ https://github.com/jesusacev/Cygwin/blob/master/guia/instalacion.rst
