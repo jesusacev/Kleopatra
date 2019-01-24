@@ -200,7 +200,7 @@ Canales para transmitir un mensaje cifrado
 Un mensaje cifrado se puede transmitir por cualquier medio que permita llegar al destinatario. Los más comunes son vía correo o scp.
 
 
-Si se quiere realizar la copia de archivos a través de scp en un Sistema Operativo windows, se debe instalar y configurar el software Cygwin.
+Si se quiere realizar la copia de archivos a través de scp en un Sistema Operativo windows, se debe instalar y configurar el software Cygwin, que es el medio que utilizaremos en este caso.
 
 
 Instalación y configuración de Cygwin
