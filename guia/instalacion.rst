@@ -105,7 +105,7 @@ Instalación y configuración de Software Kleopatra.
 .. image:: ../imagenes/configuracion/Selección_082.png
 
 
-- Para que alguien nos envíe un archivo cifrado debemos suministrarle nuestra clave pública, nunca nuestra clave privada. La clave privada es la que nos servirá para descifrar los archivos.
+NOTA: Para que alguien nos envíe un archivo cifrado debemos suministrarle nuestra clave pública, nunca nuestra clave privada. La clave privada es la que nos servirá para descifrar los archivos.
 
 
 Obtener Clave Pública
@@ -154,10 +154,10 @@ Obtener par de Claves Pública y Privada
 	.. image:: ../imagenes/cliente1/Selección_073.png
 
 
-Comuncación Bidireccional
+Intercambio Bidireccional
 +++++++++
 
-- En caso de que necesitemos la comunicación bidireccional con un cliente, debemos generar un nuevo par de claves pública y privada,tal cual como generamos las de la Empresa, y suministrarles dichas claves, obteniendolas como se explicó anteriormente.
+- En caso de que necesitemos el intercambio bidireccional con un cliente, debemos generar un nuevo par de claves pública y privada para el cliente, tal cual como generamos las de la Empresa; y suministrarles dichas claves, obteniendolas como se explicó en **Obtener par de Claves Pública y Privada**.
 
 
 - El cliente debe importar esas claves de la siguiente manera (si se tiene el respaldo se realizan estos pasos pero con dicho respaldo):
@@ -193,14 +193,14 @@ Comuncación Bidireccional
 	.. image:: ../imagenes/cliente1/Selección_078.png
 
 
-Canales para transmitir un mensaje cifrado
+Canales para transmitir un mensaje/archivo cifrado.
 +++++++++
 
 
-Un mensaje cifrado se puede transmitir por cualquier medio que permita llegar al destinatario. Los más comunes son vía correo o scp.
+Un mensaje/archivo cifrado se puede transmitir por cualquier medio que permita llegar al destinatario. Los más comunes son vía correo, scp, ftp, sftp, ftps, http, https, entre otros.
 
 
-Si se quiere realizar la copia de archivos a través de scp en un Sistema Operativo windows, se debe instalar y configurar el software Cygwin, que es el medio que utilizaremos en este caso.
+Si se quiere realizar la copia de archivos a través de scp en un Sistema Operativo Windows, se debe instalar y configurar el software Cygwin, que es el medio que utilizaremos en este caso.
 
 
 Instalación y configuración de Cygwin
