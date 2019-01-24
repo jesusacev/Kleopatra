@@ -127,17 +127,85 @@ Obtener Clave Pública
 Obtener par de Claves Pública y Privada
 ++++++++
 
-- Simplemente las obtenemos con el respaldo que hicimos de nuestro par de claves durante la creación.
+- Simplemente las obtenemos con el respaldo que hicimos de nuestro par de claves durante la creación. En caso de que no tengamos a disposición el respaldo, la clave pública la obtenemos como se explicó anteriormente y la clave privada la obtenemos de la siguiente manera:
 
 
-- En caso de que necesitemos la comunicación bidireccional con un cliente debemos generar un nuevo par de claves pública y privada,tal cual como generamos las de la Empresa, y suministrarles el respaldo realizado durante la creación.
+	- Seleccionamos el certificado que queramos. Le damos a la opción Archivo y luego Exportar claves secretas:
+
+	
+	.. image:: ../imagenes/cliente1/Selección_070.png
 
 
-Si se quiere realizar la copia de archivos a través de scp se debe instalar y configurar Cygwin que nos permite realizarlo desde el sistema operativo Windows.
+	- Nos solicitará el nombre del archivo a donde queremos exportar la clave privada:
+
+
+	.. image:: ../imagenes/cliente1/Selección_071.png
+
+
+	- Nos solicitará la contraseña de la clave privada:
+
+
+	.. image:: ../imagenes/cliente1/Selección_072.png
+
+
+	- Nos mostrará un mensaje que la clave secreta fue exportada con éxito:
+
+
+	.. image:: ../imagenes/cliente1/Selección_073.png
+
+
+Comuncación Bidireccional
++++++++++
+
+- En caso de que necesitemos la comunicación bidireccional con un cliente, debemos generar un nuevo par de claves pública y privada,tal cual como generamos las de la Empresa, y suministrarles dichas claves, obteniendolas como se explicó anteriormente.
+
+
+- El cliente debe importar esas claves de la siguiente manera (si se tiene el respaldo se realizan estos pasos pero con dicho respaldo):
+
+	
+	- Le damos a la opción Archivos y luego importar:
+
+	
+	.. image:: ../imagenes/cliente1/Selección_074.png
+
+
+	- Seleccionamos la llave privada de donde la tengamos, que incluye tambien la llave pública:
+
+
+	.. image:: ../imagenes/cliente1/Selección_075.png
+
+
+	- Nos muestra un mensaje de que se ha importado y si deseamos establecer el nivel de confianza:
+
+
+	.. image:: ../imagenes/cliente1/Selección_076.png
+
+
+	- Veremos el resultado de la importación:
+
+
+	.. image:: ../imagenes/cliente1/Selección_077.png
+
+
+	- Ya veremos el certificado cargado en Kleopatra:
+
+
+	.. image:: ../imagenes/cliente1/Selección_078.png
+
+
+Canales para transmitir un mensaje cifrado
++++++++++
+
+
+Un mensaje cifrado se puede transmitir por cualquier medio que permita llegar al destinatario. Los más comunes son vía correo o scp.
+
+
+Si se quiere realizar la copia de archivos a través de scp en un Sistema Operativo windows, se debe instalar y configurar el software Cygwin.
 
 
 Instalación y configuración de Cygwin
 +++++++
+
 
 Instalación de Cygwin: `enlace`__.
 
