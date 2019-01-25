@@ -248,7 +248,7 @@ Ahora realizaremos una ejemplificación de como realizar un envío entre la empr
 .. image:: ../imagenes/scp/Selección_074.png
 
 
--Luego creamos un enlace simbólico del home directory del usuario con la carpeta que creamos:
+-Luego creamos un enlace simbólico del home directory del usuario con la carpeta que creamos, a través del Cygwin:
 
 
 .. image:: ../imagenes/scp/Selección_075.png
@@ -293,7 +293,7 @@ Ahora realizaremos una ejemplificación de como realizar un envío entre la empr
 .. image:: ../imagenes/scp/Selección_082.png
 
 
-- Nos crea otro archivo, que si buscamos de visualizarno con un bloc de notas, nos mostrará algo parecido a esto, que evidencia que el archivo está cifrado:
+- Nos crea otro archivo, que si buscamos de visualizarlo con un bloc de notas, nos mostrará algo parecido a esto, que evidencia que el archivo está cifrado:
 
 
 .. image:: ../imagenes/scp/Selección_083.png
@@ -305,7 +305,7 @@ Ahora realizaremos una ejemplificación de como realizar un envío entre la empr
 .. image:: ../imagenes/scp/Selección_084.png
 
 
-- Luego en el Cygwin nos vamos al home directory del usuario, que ya creamos un enlace simbólico hacia la estructura de directorios para poceder a realizar el scp. Del lado del cliente debe estar creada una estructura de directorios similar para realizar el envío::
+- Luego en el Cygwin nos vamos al home directory del usuario, donde ya creamos un enlace simbólico hacia la estructura de directorios, para poceder a realizar el scp. Del lado del cliente debe estar creada una estructura de directorios similar para realizar el envío::
 
 
 .. image:: ../imagenes/scp/Selección_087.png
@@ -320,7 +320,7 @@ NOTA: En este caso estamos realizando el envío del archivo hacia un equipo con 
 .. image:: ../imagenes/scp/Selección_085.png
 
 
-- Y procedemos a descifrarlo y mandar su salida a un archivo, teniando la llave privada en el servidor del cliente por supuesto (nos pedirá la contraseña)::
+- Y procedemos a descifrarlo y mandar su salida a un archivo, teniendo la llave privada importada del cliente por supuesto (nos pedirá la contraseña)::
 
 
 .. image:: ../imagenes/scp/Selección_088.png
