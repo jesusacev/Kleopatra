@@ -320,7 +320,13 @@ NOTA: En este caso estamos realizando el envío del archivo hacia un equipo con 
 .. image:: ../imagenes/scp/Selección_085.png
 
 
-- Y procedemos a descifrarlo y mandar su salida a un archivo, teniendo la llave privada importada del cliente por supuesto (nos pedirá la contraseña)::
+- Importamos la llave privada del cliente:
+
+
+.. image:: ../imagenes/scp/Selección_089.png
+
+
+- Y procedemos a descifrarlo y mandar su salida a un archivo (nos pedirá la contraseña de la llave privada)::
 
 
 .. image:: ../imagenes/scp/Selección_088.png
