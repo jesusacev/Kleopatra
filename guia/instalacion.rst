@@ -223,5 +223,111 @@ Configuración de Openssh: `enlace`__.
 __ https://github.com/jesusacev/Cygwin/blob/master/guia/configuracion.rst
 
 
+Transferencia de archivos cifrada.
++++++++++
+
+
+Ahora realizaremos una ejemplificación de como realizar un envío entre la empresa y un cliente:
+
+
+- Primero debemos crear un usuario para el cliente que vamos a realizar el envío:
+
+
+.. image:: ../imagenes/scp/Selección_072.png
+
+
+- Hacemos inicio de sesión con dicho usuario:
+
+
+.. image:: ../imagenes/scp/Selección_073.png
+
+
+- Debemos crear una estructura de directorios para el cliente, en la partición que tengamos más espacio (en nuestro caso c), y colocar una carpeta "IN" y otra "OUT", para diferenciar los mensajes de entrada y de salida:
+
+
+.. image:: ../imagenes/scp/Selección_074.png
+
+
+-Luego creamos un enlace simbólico del home directory del usuario con la carpeta que creamos:
+
+
+.. image:: ../imagenes/scp/Selección_075.png
+
+
+.. image:: ../imagenes/scp/Selección_076.png
+
+
+- Para otorgarle seguridad a dicha carpeta, sólo le daremos permisos de control total al usuario que creamos para el cliente. Con esto, ningún otro usuario podrá visualizar el contenido de ese directorio:
+
+
+.. image:: ../imagenes/scp/Selección_077.png
+
+
+- Procedemos a crear un archivo que es el que cifraremos y enviaremos al cliente:
+
+
+.. image:: ../imagenes/scp/Selección_078.png
+
+
+- Luego en Kleopatra, seleccionamos el certificado del cliente, le damos a la opción Archivo y seguidamente a Firmar/Cifrar:
+
+
+.. image:: ../imagenes/scp/Selección_079.png
+
+
+- Seleccionamos el archivo que queremos cifrar:
+
+
+.. image:: ../imagenes/scp/Selección_080.png
+
+
+- Ciframos para otros con la llave pública del cliente:
+
+
+.. image:: ../imagenes/scp/Selección_081.png
+
+
+- Sí todo salió bien, nos debe mostrar un mensaje que el cifrado tuvo éxito:
+
+
+.. image:: ../imagenes/scp/Selección_082.png
+
+
+- Nos crea otro archivo, que si buscamos de visualizarno con un bloc de notas, nos mostrará algo parecido a esto, que evidencia que el archivo está cifrado:
+
+
+.. image:: ../imagenes/scp/Selección_083.png
+
+
+- El archivo cifrado, lo movemos a la estructura de directorios que creamos, en la carpeta "OUT", ya que va a ser enviado al cliente:
+
+
+.. image:: ../imagenes/scp/Selección_084.png
+
+
+- Luego en el Cygwin nos vamos al home directory del usuario, que ya creamos un enlace simbólico hacia la estructura de directorios para poceder a realizar el scp. Del lado del cliente debe estar creada una estructura de directorios similar para realizar el envío::
+
+
+.. image:: ../imagenes/scp/Selección_087.png
+
+
+NOTA: En este caso estamos realizando el envío del archivo hacia un equipo con linux, por lo que el sistema operativo no es un impedimento.
+
+
+- Si verificamos en el servidor del cliente ya tenemos el archivo cifrado:
+
+
+.. image:: ../imagenes/scp/Selección_085.png
+
+
+- Y procedemos a descifrarlo y mandar su salida a un archivo, teniando la llave privada en el servidor del cliente por supuesto (nos pedirá la contraseña)::
+
+
+.. image:: ../imagenes/scp/Selección_088.png
+
+
+- Si el cliente nos quiere enviar un mensaje cifrado debe tener nuestra llave publica (Empresa), e implementar un procedimento similar al que se utilizó para enviarles el archivo.
+
+
 
 
