@@ -305,7 +305,7 @@ Ahora realizaremos una ejemplificación de como realizar un envío entre la empr
 .. image:: ../imagenes/scp/Selección_084.png
 
 
-- Luego en el Cygwin nos vamos al home directory del usuario, donde ya creamos un enlace simbólico hacia la estructura de directorios, para poceder a realizar el scp. Del lado del cliente debe estar creada una estructura de directorios similar para realizar el envío::
+- Luego en el Cygwin nos vamos al home directory del usuario, donde ya creamos un enlace simbólico hacia la estructura de directorios, para poceder a realizar el scp. Del lado del cliente debe estar creada una estructura de directorios similar y un usuario de servicio para realizar el envío::
 
 
 .. image:: ../imagenes/scp/Selección_087.png
